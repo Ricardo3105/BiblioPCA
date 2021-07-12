@@ -1,0 +1,7 @@
+{
+  "name": "BiblioPCA",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

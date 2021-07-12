@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      BiblioPCA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">BiblioPCA</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2>Supermercado </h2>
+
+  <ion-item>
+    <ion-label>Valor de compra</ion-label>
+    <ion-input [(ngModel)]="valorCompra" type="number" aria-placeholder="Digitar valor de la compra"></ion-input>
+  </ion-item>
+  <br>
+
+  <ion-button expand="block" (click)="enviarValorCompra()" routerDirection="forward">Calcular</ion-button>
+  <br>
+
+
+  <h2>Banco</h2>
+
+  <ion-item>
+    <ion-label>Valor a invertir</ion-label>
+    <ion-input [(ngModel)]="valorInversion" type="number" aria-placeholder="Digitar valor de la compra"></ion-input>
+  </ion-item>
+
+  <br>
+  <ion-button expand="block" (click)="enviarValorInversion()" routerDirection="forward">Calcular</ion-button>
+
+
+</ion-content>
